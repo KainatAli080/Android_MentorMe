@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#E7EFFE">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="316dp"
+        android:background="@drawable/circle_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle_1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="-68dp"
+        android:layout_marginEnd="214dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle_1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="30">
+
+        <!--Top of Screen 2, name display-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textAlignment="center"
+            android:layout_weight="11"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="mentor"
+                android:textColor="#2098B4"
+                android:textSize="50sp"
+                android:textStyle="bold|italic"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="170dp"
+                tools:layout_editor_absoluteX="100dp"
+                tools:layout_editor_absoluteY="250dp"
+                tools:text="mentor" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="me"
+                android:textColor="#F9CF34"
+                android:textSize="50sp"
+                android:textStyle="bold|italic"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="170dp"
+                tools:layout_editor_absoluteX="246dp"
+                tools:layout_editor_absoluteY="277dp"
+                tools:text="me" />
+
+        </LinearLayout>
+
+        <!--    Start of Login portion of Screen 2-->
+        <LinearLayout
+            android:background="@drawable/login_rounded"
+            android:backgroundTint="#66BBB2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textAlignment="center"
+            android:layout_weight="10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light">
+
+            </TextView>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Email"
+                android:textColor="@color/white"
+                android:layout_marginLeft="-85dp"
+                android:layout_marginTop="70dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light">
+            </TextView>
+
+            <EditText
+                android:id="@+id/Email_Input"
+                android:background="@drawable/loginpage_inputfield"
+                android:backgroundTint="@color/white"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:layout_marginLeft="-50dp"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Password"
+                android:textColor="@color/white"
+                android:layout_marginLeft="-370dp"
+                android:layout_marginTop="150dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light">
+            </TextView>
+
+            <EditText
+                android:id="@+id/Password_Input"
+                android:background="@drawable/loginpage_inputfield"
+                android:backgroundTint="@color/white"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="190dp"
+                android:layout_marginLeft="-90dp"
+                android:textSize="30dp"/>
+        </LinearLayout>
+
+        <!--    Start of Login button of Screen 2 (for buttons)-->
+        <LinearLayout
+            android:background="#66BBB2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textAlignment="center"
+            android:layout_weight="7"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/login_btn"
+                android:backgroundTint="@color/white"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="45dp"
+                android:text="Login"
+                android:textColor="#66BBB2"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/forgotPassword_btn"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="-18dp"
+                android:layout_marginLeft="-105dp"
+                android:backgroundTint="#66BBB2"
+                android:text="Forgot Your Password?" />
+        </LinearLayout>
+
+        <!--    Start of Sign up button of Screen 2 (for buttons)-->
+        <LinearLayout
+            android:background="#66BBB2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textAlignment="center"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Don't have an account? "
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:layout_marginLeft="70dp">
+            </TextView>
+
+            <Button
+                android:id="@+id/SignUp_btn"
+                android:layout_width="103dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#66BBB2"
+                android:textColor="#137D9A"
+                android:textStyle="italic"
+                android:textSize="16dp"
+                android:text="Sign Up"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
