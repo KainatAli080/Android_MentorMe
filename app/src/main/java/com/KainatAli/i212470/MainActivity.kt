@@ -22,15 +22,5 @@ class MainActivity : AppCompatActivity() {
             finish()
         }, introPage_displayTime)
 
-//        var btn = findViewById<CircleImageView>(R.id.main)
-//
-//        btn.setOnClickListener {
-//            startActivity(
-//
-//                Intent(this,
-//                    SecondActivity::class.java)
-//            );
-//        }
-
     }
 }

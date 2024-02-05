@@ -4,6 +4,8 @@ import android.graphics.Paint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.content.Intent
+import android.widget.Toast
 
 class Screen2_Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,5 +14,10 @@ class Screen2_Login : AppCompatActivity() {
 
         val signup = findViewById<Button>(R.id.SignUp_btn)
         signup.paintFlags = signup.paintFlags or Paint.UNDERLINE_TEXT_FLAG
+
+        var ToSignUpPage_btn = findViewById<Button>(R.id.SignUp_btn)
+        ToSignUpPage_btn.setOnClickListener{
+            startActivity(Intent(this, Screen3_SignUp::class.java));
+        }
     }
 }
