@@ -17,6 +17,7 @@ class Screen2_Login : AppCompatActivity() {
         var ToSignUpPage_btn = findViewById<Button>(R.id.SignUp_btn)
         ToSignUpPage_btn.setOnClickListener{
             startActivity(Intent(this, Screen3_SignUp::class.java));
+            finish()
         }
     }
 }

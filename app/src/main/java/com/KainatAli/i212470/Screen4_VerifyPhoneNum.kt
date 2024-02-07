@@ -20,20 +20,10 @@ class Screen4_VerifyPhoneNum : AppCompatActivity() {
         val phoneNumber = intent.getStringExtra(Screen3_SignUp.EXTRA_MESSAGE)
         phone_number.text = phoneNumber.toString()
 
-
-//        // Retrieve the phone number passed from Screen 1
-//        val phoneNumber = intent.getStringExtra("phoneNumber")
-
-//        // Set the phone number to the TextView
-//        val pnum = findViewById<TextView>(R.id.display_pnum)
-//        Log.d("PhoneNumber", "Phone Number: $phoneNumber")
-//        if (!phoneNumber.isNullOrEmpty()) {
-//            pnum.text = phoneNumber.toString()
-//        }
-
         val back_btn = findViewById<MaterialButton>(R.id.back_btn_toSignUp)
         back_btn.setOnClickListener{
             startActivity(Intent(this, Screen3_SignUp::class.java));
+            finish()
         }
     }
 }

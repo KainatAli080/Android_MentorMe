@@ -24,6 +24,7 @@ class Screen3_SignUp : AppCompatActivity() {
         var ToLoginPage_btn = findViewById<Button>(R.id.loginPage_btn)
         ToLoginPage_btn.setOnClickListener{
             startActivity(Intent(this, Screen2_Login::class.java));
+            finish()
         }
 
         // Assume phoneNumberEditText is the EditText where the user enters the phone number
@@ -35,6 +36,7 @@ class Screen3_SignUp : AppCompatActivity() {
             val intent = Intent(this, Screen4_VerifyPhoneNum::class.java)
             intent.putExtra("phone_number", pnum)
             startActivity(intent)
+            finish()
         }
 
     }
