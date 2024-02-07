@@ -78,7 +78,7 @@
         <!--    Start of Login portion of Screen 2-->
         <LinearLayout
             android:background="@drawable/login_rounded"
-            android:backgroundTint="#66BBB2"
+            android:backgroundTint="#89CBF6"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:textAlignment="center"
@@ -114,7 +114,7 @@
                 android:id="@+id/Email_Input"
                 android:background="@drawable/loginpage_inputfield"
                 android:backgroundTint="@color/white"
-                android:layout_width="370dp"
+                android:layout_width="340dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="110dp"
                 android:layout_marginLeft="-50dp"
@@ -125,7 +125,7 @@
                 android:layout_width="wrap_content"
                 android:text="Password"
                 android:textColor="@color/white"
-                android:layout_marginLeft="-370dp"
+                android:layout_marginLeft="-340dp"
                 android:layout_marginTop="150dp"
                 android:textSize="20dp"
                 android:textStyle="bold"
@@ -136,7 +136,7 @@
                 android:id="@+id/Password_Input"
                 android:background="@drawable/loginpage_inputfield"
                 android:backgroundTint="@color/white"
-                android:layout_width="370dp"
+                android:layout_width="340dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="190dp"
                 android:layout_marginLeft="-90dp"
@@ -145,7 +145,7 @@
 
         <!--    Start of Login button of Screen 2 (for buttons)-->
         <LinearLayout
-            android:background="#66BBB2"
+            android:background="#89CBF6"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:textAlignment="center"
@@ -160,7 +160,7 @@
                 android:layout_marginLeft="120dp"
                 android:layout_marginTop="45dp"
                 android:text="Login"
-                android:textColor="#66BBB2"
+                android:textColor="#89CBF6"
                 android:textSize="20dp" />
 
             <Button
@@ -169,14 +169,14 @@
                 android:layout_height="40dp"
                 android:layout_marginBottom="50dp"
                 android:layout_marginTop="-18dp"
-                android:layout_marginLeft="-105dp"
-                android:backgroundTint="#66BBB2"
+                android:layout_marginLeft="-145dp"
+                android:backgroundTint="#89CBF6"
                 android:text="Forgot Your Password?" />
         </LinearLayout>
 
         <!--    Start of Sign up button of Screen 2 (for buttons)-->
         <LinearLayout
-            android:background="#66BBB2"
+            android:background="#89CBF6"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:textAlignment="center"
@@ -190,7 +190,7 @@
                 android:text="Don't have an account? "
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:layout_marginLeft="70dp">
+                android:layout_marginLeft="50dp">
             </TextView>
 
             <Button
@@ -198,7 +198,7 @@
                 android:layout_width="103dp"
                 android:layout_height="40dp"
                 android:layout_marginBottom="20dp"
-                android:backgroundTint="#66BBB2"
+                android:backgroundTint="#89CBF6"
                 android:textColor="#137D9A"
                 android:textStyle="italic"
                 android:textSize="16dp"

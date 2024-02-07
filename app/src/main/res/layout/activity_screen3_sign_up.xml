@@ -78,7 +78,7 @@
         <!--    Start of Login portion of Screen 2-->
         <LinearLayout
             android:background="@drawable/login_rounded"
-            android:backgroundTint="#66BBB2"
+            android:backgroundTint="#89CBF6"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:textAlignment="center"
@@ -114,7 +114,7 @@
                 android:id="@+id/name_Input"
                 android:background="@drawable/loginpage_inputfield"
                 android:backgroundTint="@color/white"
-                android:layout_width="370dp"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="70dp"
                 android:layout_marginLeft="-47dp"
@@ -126,7 +126,7 @@
                 android:layout_width="wrap_content"
                 android:text="Email"
                 android:textColor="@color/white"
-                android:layout_marginLeft="-370dp"
+                android:layout_marginLeft="-350dp"
                 android:layout_marginTop="100dp"
                 android:textSize="17dp"
                 android:textStyle="bold"
@@ -137,7 +137,7 @@
                 android:id="@+id/Email_Input"
                 android:background="@drawable/loginpage_inputfield"
                 android:backgroundTint="@color/white"
-                android:layout_width="370dp"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="130dp"
                 android:layout_marginLeft="-45dp"
@@ -149,7 +149,7 @@
                 android:layout_width="wrap_content"
                 android:text="Contact Number"
                 android:textColor="@color/white"
-                android:layout_marginLeft="-370dp"
+                android:layout_marginLeft="-350dp"
                 android:layout_marginTop="160dp"
                 android:textSize="17dp"
                 android:textStyle="bold"
@@ -160,7 +160,7 @@
                 android:id="@+id/contactNum_Input"
                 android:background="@drawable/loginpage_inputfield"
                 android:backgroundTint="@color/white"
-                android:layout_width="370dp"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="190dp"
                 android:layout_marginLeft="-125dp"
@@ -172,7 +172,7 @@
                 android:layout_width="wrap_content"
                 android:text="Country"
                 android:textColor="@color/white"
-                android:layout_marginLeft="-370dp"
+                android:layout_marginLeft="-350dp"
                 android:layout_marginTop="220dp"
                 android:textSize="17dp"
                 android:textStyle="bold"
@@ -183,7 +183,7 @@
                 android:id="@+id/country_Input"
                 android:background="@drawable/loginpage_inputfield"
                 android:backgroundTint="@color/white"
-                android:layout_width="370dp"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="250dp"
                 android:layout_marginLeft="-60dp"
@@ -195,7 +195,7 @@
                 android:layout_width="wrap_content"
                 android:text="City"
                 android:textColor="@color/white"
-                android:layout_marginLeft="-370dp"
+                android:layout_marginLeft="-350dp"
                 android:layout_marginTop="278dp"
                 android:textSize="17dp"
                 android:textStyle="bold"
@@ -206,7 +206,7 @@
                 android:id="@+id/city_Input"
                 android:background="@drawable/loginpage_inputfield"
                 android:backgroundTint="@color/white"
-                android:layout_width="370dp"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="310dp"
                 android:layout_marginLeft="-30dp"
@@ -218,7 +218,7 @@
                 android:layout_width="wrap_content"
                 android:text="Password"
                 android:textColor="@color/white"
-                android:layout_marginLeft="-370dp"
+                android:layout_marginLeft="-350dp"
                 android:layout_marginTop="340dp"
                 android:textSize="17dp"
                 android:textStyle="bold"
@@ -229,7 +229,7 @@
                 android:id="@+id/password_Input"
                 android:background="@drawable/loginpage_inputfield"
                 android:backgroundTint="@color/white"
-                android:layout_width="370dp"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="370dp"
                 android:layout_marginLeft="-77dp"
@@ -240,7 +240,7 @@
 
         <!--    Start of Login button of Screen 2 (for buttons)-->
         <LinearLayout
-            android:background="#66BBB2"
+            android:background="#89CBF6"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:textAlignment="center"
@@ -248,14 +248,14 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/login_btn"
+                android:id="@+id/SignUpFinished_btn"
                 android:backgroundTint="@color/white"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="120dp"
                 android:layout_marginTop="28dp"
                 android:text="Sign Up"
-                android:textColor="#66BBB2"
+                android:textColor="#89CBF6"
                 android:textSize="20dp" />
 
             <TextView
@@ -272,7 +272,7 @@
 
         <!--    Start of Sign up button of Screen 2 (for buttons)-->
         <LinearLayout
-            android:background="#66BBB2"
+            android:background="#89CBF6"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:textAlignment="center"
@@ -294,7 +294,7 @@
                 android:layout_width="103dp"
                 android:layout_height="40dp"
                 android:layout_marginBottom="20dp"
-                android:backgroundTint="#66BBB2"
+                android:backgroundTint="#89CBF6"
                 android:textColor="#137D9A"
                 android:textStyle="italic"
                 android:textSize="16dp"
