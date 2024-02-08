@@ -39,5 +39,11 @@ class Screen3_SignUp : AppCompatActivity() {
             finish()
         }
 
+        //Upon finishing sign up, redirect to login Page
+        var LoginPage = findViewById<Button>(R.id.SignUpFinished_btn)
+        LoginPage.setOnClickListener{
+            startActivity(Intent(this, Screen2_Login::class.java));
+            finish()
+        }
     }
 }

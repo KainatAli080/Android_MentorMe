@@ -11,7 +11,7 @@ class Screen5_ForgotPassword : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_screen5_forgot_password)
 
-        val redirectToLogin = findViewById<Button>(R.id.redirectToLoginPage_btn)
+        val redirectToLogin = findViewById<Button>(R.id.redirectToLoginPage_fromForgotPassword_btn)
         redirectToLogin.paintFlags = redirectToLogin.paintFlags or Paint.UNDERLINE_TEXT_FLAG
 
         redirectToLogin.setOnClickListener{
