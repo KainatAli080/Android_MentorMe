@@ -5,8 +5,12 @@ import android.graphics.Paint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 
 class Screen2_Login : AppCompatActivity() {
+    companion object{
+        val PASS_NAME = "Name"
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_screen2_login)
@@ -26,6 +30,17 @@ class Screen2_Login : AppCompatActivity() {
         var toForgotPasswordPage = findViewById<Button>(R.id.forgotPassword_btnOnLoginPage)
         toForgotPasswordPage.setOnClickListener{
             startActivity(Intent(this, Screen5_ForgotPassword::class.java));
+            finish()
+        }
+
+        //To call new screen : To redirect to Home Page
+        val email = findViewById<EditText>(R.id.Email_Input)
+        var loginSuccessful = findViewById<Button>(R.id.loginBtn_toHomePage)
+        loginSuccessful.setOnClickListener{
+            val name = email.text.toString()
+            val intent = Intent(this, Screen7_Homepage::class.java)
+            intent.putExtra("Name", name)
+            startActivity(intent)
             finish()
         }
     }
