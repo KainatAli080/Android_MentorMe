@@ -170,10 +170,11 @@
                 android:layout_width="200dp"
                 android:layout_height="40dp"
                 android:layout_marginBottom="50dp"
-                android:layout_marginTop="-14dp"
-                android:layout_marginLeft="-165dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginLeft="-175dp"
                 android:backgroundTint="#89CBF6"
-                android:text="Forgot Your Password?" />
+                android:text="Forgot Your Password?"
+                android:textColor="@color/white"/>
         </LinearLayout>
 
         <!--    Start of Sign up button of Screen 2 (for buttons)-->
