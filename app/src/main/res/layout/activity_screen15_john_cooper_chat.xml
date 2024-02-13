@@ -92,37 +92,39 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:orientation="vertical">
+        </LinearLayout>
+
         <!--    The text Messages Exchanged   -->
         <LinearLayout
             android:layout_height="0dp"
             android:layout_width="match_parent"
-            android:layout_weight="15"
+            android:layout_weight="9"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:orientation="vertical">
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="140dp"
                     android:layout_height="45dp"
                     android:src="@drawable/rectangle"
-                    android:layout_marginStart="260dp"/>
+                    android:layout_marginStart="230dp"
+                    android:textAlignment="textEnd"/>
                 <TextView
                     android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:text="Hello, you there?"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textAlignment="textEnd"
-                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="237dp"
                     android:fontFamily="sans-serif"
                     android:layout_marginTop="-35dp"/>
             </LinearLayout>
@@ -155,15 +157,16 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="170dp"
+                    android:layout_width="175dp"
                     android:layout_height="45dp"
                     android:src="@drawable/rectangle"
-                    android:layout_marginStart="225dp"/>
+                    android:layout_marginStart="205dp"
+                    android:textAlignment="textEnd"/>
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
@@ -171,7 +174,6 @@
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textAlignment="textEnd"
-                    android:layout_marginEnd="20dp"
                     android:fontFamily="sans-serif"
                     android:layout_marginTop="-35dp"/>
             </LinearLayout>
@@ -188,7 +190,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"/>
                 <ImageView
-                    android:layout_width="170dp"
+                    android:layout_width="180dp"
                     android:layout_height="45dp"
                     android:src="@drawable/rectangle"
                     android:layout_marginStart="10dp"
@@ -208,51 +210,51 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="75dp"
+                    android:layout_height="105dp"
                     android:src="@drawable/rectangle"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"/>
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_gallery"
-                    android:layout_marginStart="-390dp"
-                    android:layout_marginTop="15dp"/>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_gallery"
+                        android:layout_marginTop="-100dp"
+                        android:layout_marginStart="20dp"/>
 
-                <EditText
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="10dp"
-                    android:textSize="15sp"
-                    android:textColor="@color/black"
-                    android:hint="Type something..."/>
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-37dp"
+                        android:layout_marginStart="55dp"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:hint="Type something..."/>
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_camera"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="15dp"/>
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_mic"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="15dp"/>
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_back"
-                    android:rotation="180"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="15dp"/>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_camera"
+                        android:layout_marginStart="270dp"
+                        android:layout_marginTop="-35dp"/>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_mic"
+                        android:layout_marginStart="310dp"
+                        android:layout_marginTop="-30dp"/>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_back"
+                        android:rotation="180"
+                        android:layout_marginStart="340dp"
+                        android:layout_marginTop="-30dp"/>
 
             </LinearLayout>
 
