@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screen19_VideoCall"
+    android:background="@color/backGround_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="16"
+            android:background="@color/cameraBackgroundColor">
+            <TextView
+                android:layout_height="25dp"
+                android:layout_width="60dp"
+                android:text="50:03"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="60dp"
+                android:layout_marginStart="170dp"/>
+        </LinearLayout>
+
+        <!-- list of options available in camera-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_height="4dp"
+                android:layout_width="120dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:background="@drawable/login_rounded"
+                android:backgroundTint="@color/cameraBackgroundColor"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <!-- photo taking Button-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="3">
+
+            <ImageView
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                android:src="@drawable/circle_camerastuff"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"/>
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:src="@drawable/ic_mic"
+                android:layout_marginStart="-35dp"
+                android:layout_marginTop="20dp"/>
+            <Button
+                android:id="@+id/openVoiceCallBtn_onVideoCallPage"
+                android:layout_height="45dp"
+                android:layout_width="45dp"
+                android:backgroundTint="#00155B7C"
+                android:layout_marginStart="-39dp"
+                android:layout_marginTop="15dp"/>
+
+            <ImageView
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                android:src="@drawable/circle_camerastuff"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"/>
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:src="@drawable/ic_offvideo"
+                android:layout_marginStart="-35dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                android:src="@drawable/circle_camerastuff"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="15dp"/>
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:src="@drawable/ic_refresh"
+                android:rotation="40"
+                android:layout_marginStart="-35dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_height="45dp"
+                android:layout_width="45dp"
+                android:src="@drawable/red_circle"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="15dp"/>
+            <ImageView
+                android:layout_height="35dp"
+                android:layout_width="35dp"
+                android:src="@drawable/ic_cross"
+                android:rotation="45"
+                android:layout_marginStart="-40dp"
+                android:layout_marginTop="20dp"/>
+            <ImageView
+                android:layout_height="35dp"
+                android:layout_width="35dp"
+                android:src="@drawable/ic_cross"
+                android:rotation="135"
+                android:layout_marginStart="-35dp"
+                android:layout_marginTop="20dp"/>
+            <Button
+                android:id="@+id/closeVideoCallBtn_onVideoCallPage"
+                android:layout_height="45dp"
+                android:layout_width="45dp"
+                android:backgroundTint="#00155B7C"
+                android:layout_marginStart="-39dp"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
