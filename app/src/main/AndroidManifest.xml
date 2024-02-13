@@ -13,6 +13,15 @@
         android:theme="@style/Theme.I212470"
         tools:targetApi="31">
         <activity
+            android:name=".Screen15_JohnCooperChat"
+            android:exported="false" />
+        <activity
+            android:name=".Screen14_ChatsPage"
+            android:exported="false" />
+        <activity
+            android:name=".Screen13_BookSession"
+            android:exported="false" />
+        <activity
             android:name=".Screen12_AddNewMentor"
             android:exported="false" />
         <activity

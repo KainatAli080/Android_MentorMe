@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screen15_JohnCooperChat"
+    android:background="@color/backGround_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="20">
+
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/mentorpage_rectangle"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_back"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="45dp">
+                </ImageView>
+
+                <Button
+                    android:id="@+id/backBtn_onJohnCoopersChat"
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:backgroundTint="#00155B7C"
+                    android:layout_marginStart="-45dp"
+                    android:layout_marginTop="40dp">
+                </Button>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="John Cooper"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="45dp"
+                    android:textSize="30dp"
+                    android:fontFamily="sans-serif-medium">
+                </TextView>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_call_sign"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="50dp">
+                </ImageView>
+                <Button
+                    android:id="@+id/callBtn_onJohnCoopersChat"
+                    android:layout_height="35dp"
+                    android:layout_width="35dp"
+                    android:backgroundTint="#00155B7C"
+                    android:layout_marginStart="-30dp"
+                    android:layout_marginTop="40dp">
+                </Button>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_video"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="50dp">
+                </ImageView>
+                <Button
+                    android:id="@+id/videoCallBtn_onJohnCoopersChat"
+                    android:layout_height="35dp"
+                    android:layout_width="35dp"
+                    android:backgroundTint="#00155B7C"
+                    android:layout_marginStart="-32dp"
+                    android:layout_marginTop="40dp">
+                </Button>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--    The text Messages Exchanged   -->
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="15"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/rectangle"
+                    android:layout_marginStart="260dp"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Hello, you there?"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textAlignment="textEnd"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="-35dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/headshot_mentor"
+                    android:layout_marginStart="10dp"/>
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/rectangle"
+                    android:layout_marginStart="10dp"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Yes"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="-50dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/rectangle"
+                    android:layout_marginStart="225dp"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="I need your guidance."
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textAlignment="textEnd"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="-35dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/headshot_mentor"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"/>
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/rectangle"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="How can I help you?"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="-160dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:src="@drawable/rectangle"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_gallery"
+                    android:layout_marginStart="-390dp"
+                    android:layout_marginTop="15dp"/>
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:hint="Type something..."/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_camera"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_mic"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_back"
+                    android:rotation="180"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--    Start of Bottom Navigation    -->
+        <LinearLayout
+            android:background="#155B7C"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textAlignment="center"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <!--For home button on botton navigation-->
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ic_home"
+                android:backgroundTint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:textStyle="bold"
+
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:text="Home"
+                android:layout_marginStart="-40dp"
+                android:layout_marginTop="20dp">
+            </TextView>
+
+            <Button
+                android:id="@+id/Homebtn_onJohnsChat_BottomNav"
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:backgroundTint="#00155B7C"
+                android:layout_marginStart="-52dp">
+            </Button>
+
+            <!-- For Search Button -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/ic_search"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:text="Search"
+                android:layout_marginStart="-40dp"
+                android:layout_marginTop="20dp">
+            </TextView>
+
+            <Button
+                android:id="@+id/Searchbtn_onJohnsChat_BottomNav"
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:backgroundTint="#00155B7C"
+                android:layout_marginStart="-57dp">
+            </Button>
+
+            <!--   Plus button on bottom nav-->
+
+            <ImageView
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:src="@drawable/ic_plus_circle"
+                android:background="@drawable/rectangle"
+                android:backgroundTint="#00C1DFF3"
+                android:rotation="90"
+                android:layout_marginStart="10dp">
+            </ImageView>
+
+            <ImageView
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:src="@drawable/ic_plus_circle"
+                android:background="@drawable/rectangle"
+                android:backgroundTint="#00C1DFF3"
+                android:layout_marginStart="-60dp">
+            </ImageView>
+
+            <Button
+                android:id="@+id/Plusbtn_onJohnsChat_bottomNav"
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:backgroundTint="#00155B7C"
+                android:layout_marginStart="-63dp">
+            </Button>
+
+            <ImageView
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                android:src="@drawable/ic_plus_sign"
+                android:background="@drawable/rectangle"
+                android:backgroundTint="#00C1DFF3"
+                android:layout_marginStart="-63dp"
+                android:layout_marginTop="5dp">
+            </ImageView>
+
+            <!-- For Chat Button -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/ic_chat"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:text="Chats"
+                android:layout_marginStart="-40dp"
+                android:layout_marginTop="20dp">
+            </TextView>
+
+
+            <Button
+                android:id="@+id/Chatbtn_onJohnsChat_bottomNav"
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:backgroundTint="#00155B7C"
+                android:layout_marginStart="-49dp">
+            </Button>
+
+            <!-- For Profile Button -->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/ic_profile"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:text="Profile"
+                android:layout_marginStart="-40dp"
+                android:layout_marginTop="20dp">
+            </TextView>
+
+            <Button
+                android:id="@+id/Profilebtn_onJohnsChat_bottomNav"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="-55dp"
+                android:backgroundTint="#00155B7C">
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

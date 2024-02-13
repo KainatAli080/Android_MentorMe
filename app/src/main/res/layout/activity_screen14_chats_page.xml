@@ -4,44 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Screen12_AddNewMentor"
+    tools:context=".Screen14_ChatsPage"
     android:background="@color/backGround_home">
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="170dp"
-        android:layout_height="170dp"
-        android:layout_marginTop="-40dp"
-        android:layout_marginEnd="316dp"
-        android:background="@drawable/circle_1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/circle_1" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="170dp"
-        android:layout_height="170dp"
-        android:layout_marginTop="-80dp"
-        android:layout_marginEnd="254dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/circle_1" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:weightSum="30">
+        android:weightSum="20">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:textAlignment="center"
-            android:layout_weight="8"
-            android:orientation="vertical">
+            android:orientation="horizontal"
+            android:layout_weight="2.5">
 
-            <!--    Make BackButton here-->
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -52,192 +29,243 @@
             </ImageView>
 
             <Button
-                android:id="@+id/Backbtn_onAddNewMentorPage"
-                android:layout_height="40dp"
-                android:layout_width="40dp"
-                android:backgroundTint="#00CBE3F3"
-                android:layout_marginTop="-40dp"
-                android:layout_marginStart="20dp">
+                android:id="@+id/backBtn_onChatsPage"
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                android:backgroundTint="#00155B7C"
+                android:layout_marginStart="-45dp"
+                android:layout_marginTop="30dp">
             </Button>
 
             <TextView
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
-                android:text="Add new mentor"
-                android:textColor="@color/searchPageTextColor"
-                android:textSize="30sp"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="30dp"
-                android:textStyle="bold"/>
-
-            <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
-                android:text="Help us expand!"
+                android:text="Chats"
                 android:textColor="@color/searchPageTextColor"
-                android:textSize="17sp"
-                android:layout_marginTop="0dp"
-                android:layout_marginStart="130dp"/>
-
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="35dp"
+                android:textSize="30dp"
+                android:fontFamily="sans-serif">
+            </TextView>
         </LinearLayout>
 
-        <!--Browse Categories Section-->
         <LinearLayout
-            android:background="@drawable/login_rounded"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:textAlignment="center"
-            android:layout_weight="19.5"
-            android:orientation="vertical"
-            android:backgroundTint="@color/browseCategoriesColor">
+            android:orientation="horizontal"
+            android:layout_weight="0.5">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="My Community"
+                android:textColor="@color/cameraBackgroundColor"
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"
+                android:textSize="15dp"
+                android:fontFamily="sans-serif">
+            </TextView>
+        </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="2.5">
+            <ImageView
+                android:layout_height="75dp"
+                android:layout_width="75dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/circle_booksession_stuff">
+            </ImageView>
+            <ImageView
+                android:layout_height="70dp"
+                android:layout_width="70dp"
+                android:layout_marginStart="-73dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/headshot_mentor">
+            </ImageView>
+            <ImageView
+                android:layout_height="70dp"
+                android:layout_width="70dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/headshot_mentor">
+            </ImageView>
+            <ImageView
+                android:layout_height="75dp"
+                android:layout_width="75dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/circle_booksession_stuff">
+            </ImageView>
+            <ImageView
+                android:layout_height="70dp"
+                android:layout_width="70dp"
+                android:layout_marginStart="-73dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/headshot_mentor">
+            </ImageView>
+            <ImageView
+                android:layout_height="75dp"
+                android:layout_width="75dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/circle_booksession_stuff">
+            </ImageView>
+            <ImageView
+                android:layout_height="70dp"
+                android:layout_width="70dp"
+                android:layout_marginStart="-73dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/headshot_mentor">
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.5">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="All Messages"
+                android:textColor="@color/cameraBackgroundColor"
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"
+                android:textSize="15dp"
+                android:fontFamily="sans-serif">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="12">
+            <!--      Chat 1-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
                 android:orientation="horizontal">
-
-                <!--    Upload Video Button-->
-
                 <ImageView
-                    android:layout_height="80dp"
-                    android:layout_width="120dp"
-                    android:src="@drawable/dashedborder_rectangle"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginStart="60dp"/>
+                    android:layout_height="70dp"
+                    android:layout_width="70dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/headshot_mentor">
+                </ImageView>
 
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="Upload Video"
+                    android:text="John Cooper"
                     android:textColor="@color/searchPageTextColor"
-                    android:layout_marginTop="70dp"
-                    android:layout_marginStart="-100dp"/>
-
-                <ImageView
-                    android:layout_height="40dp"
-                    android:layout_width="40dp"
-                    android:src="@drawable/ic_video_colored"
+                    android:textStyle="bold"
+                    android:layout_marginStart="15dp"
                     android:layout_marginTop="30dp"
-                    android:layout_marginStart="-60dp"/>
-
-                <!--    Upload Image Button-->
-
-                <ImageView
-                    android:layout_height="80dp"
-                    android:layout_width="120dp"
-                    android:src="@drawable/dashedborder_rectangle"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginStart="60dp"/>
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif">
+                </TextView>
 
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="Upload Photo"
-                    android:textColor="@color/searchPageTextColor"
-                    android:layout_marginTop="70dp"
-                    android:layout_marginStart="-100dp"/>
+                    android:text="1 New Message"
+                    android:textColor="#F12C2C"
+                    android:textStyle="bold"
+                    android:layout_marginStart="-115dp"
+                    android:layout_marginTop="50dp"
+                    android:textSize="12dp"
+                    android:fontFamily="sans-serif">
+                </TextView>
 
-                <ImageView
-                    android:layout_height="40dp"
-                    android:layout_width="40dp"
-                    android:src="@drawable/ic_camera_colored"
+                <Button
+                    android:id="@+id/openJohnsChat_onChatsPage"
+                    android:layout_height="30dp"
+                    android:layout_width="200dp"
+                    android:backgroundTint="#00155B7C"
                     android:layout_marginTop="30dp"
-                    android:layout_marginStart="-65dp"/>
+                    android:layout_marginStart="-100dp">
+                </Button>
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:orientation="vertical">
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_height="70dp"
+                    android:layout_width="70dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/headshot_mentor">
+                </ImageView>
 
                 <TextView
                     android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:text="Name"
-                    android:textColor="@color/white"
-                    android:textSize="18dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="20dp"/>
-                <ImageView
-                    android:layout_height="35dp"
-                    android:layout_width="340dp"
-                    android:src="@drawable/ratepage_rectangle_withborder"
-                    android:backgroundTint="@color/white"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginStart="20dp"/>
-                <EditText
-                    android:layout_width="320dp"
-                    android:layout_height="40dp"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginTop="-36dp"
-                    android:hint="Enter Name"
-                    android:textSize="15dp"
-                    android:textColor="@color/inputFieldColor"/>
-
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:text="Description"
-                    android:textColor="@color/white"
-                    android:textSize="18dp"
-                    android:layout_marginStart="20dp"/>
-                <ImageView
-                    android:layout_height="35dp"
-                    android:layout_width="340dp"
-                    android:src="@drawable/ratepage_rectangle_withborder"
-                    android:backgroundTint="@color/white"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginStart="20dp"/>
-                <EditText
-                    android:layout_width="320dp"
-                    android:layout_height="40dp"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginTop="-36dp"
-                    android:hint="Enter Description"
-                    android:textSize="15dp"
-                    android:textColor="@color/inputFieldColor"/>
-
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:text="Status"
-                    android:textColor="@color/white"
-                    android:textSize="18dp"
-                    android:layout_marginStart="20dp"/>
-                <ImageView
-                    android:layout_height="35dp"
-                    android:layout_width="340dp"
-                    android:src="@drawable/ratepage_rectangle_withborder"
-                    android:backgroundTint="@color/white"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginStart="20dp"/>
-                <EditText
-                    android:layout_width="320dp"
-                    android:layout_height="40dp"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginTop="-36dp"
-                    android:hint="Available"
-                    android:textSize="15dp"
-                    android:textColor="@color/inputFieldColor"/>
-
-                <Button
-                    android:id="@+id/uploadMentorBtn_onAddNewMentorPage"
-                    android:layout_height="60dp"
-                    android:layout_width="350dp"
-                    android:text="Upload"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="80dp"
-                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:text="Jack Watson"
+                    android:textColor="@color/searchPageTextColor"
                     android:textStyle="bold"
-                    android:fontFamily="sans-serif-medium"
-                    android:backgroundTint="@color/searchPageTextColor"/>
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif">
+                </TextView>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="No New Message"
+                    android:textColor="@color/cameraBackgroundColor"
+                    android:textStyle="bold"
+                    android:layout_marginStart="-115dp"
+                    android:layout_marginTop="50dp"
+                    android:textSize="12dp"
+                    android:fontFamily="sans-serif">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_height="70dp"
+                    android:layout_width="70dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/headshot_mentor">
+                </ImageView>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Emma Philips"
+                    android:textColor="@color/searchPageTextColor"
+                    android:textStyle="bold"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif">
+                </TextView>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="No New Message"
+                    android:textColor="@color/cameraBackgroundColor"
+                    android:textStyle="bold"
+                    android:layout_marginStart="-120dp"
+                    android:layout_marginTop="50dp"
+                    android:textSize="12dp"
+                    android:fontFamily="sans-serif">
+                </TextView>
 
             </LinearLayout>
 
@@ -249,7 +277,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:textAlignment="center"
-            android:layout_weight="2.5"
+            android:layout_weight="2"
             android:orientation="horizontal">
 
             <!--For home button on botton navigation-->
@@ -276,7 +304,7 @@
             </TextView>
 
             <Button
-                android:id="@+id/Homebtn_onAddMentorPage_BottomNav"
+                android:id="@+id/Homebtn_onChatsPage_BottomNav"
                 android:layout_height="60dp"
                 android:layout_width="70dp"
                 android:backgroundTint="#00155B7C"
@@ -305,7 +333,7 @@
             </TextView>
 
             <Button
-                android:id="@+id/Searchbtn_onAddMentorPage_BottomNav"
+                android:id="@+id/Searchbtn_onChatsPage_BottomNav"
                 android:layout_height="60dp"
                 android:layout_width="70dp"
                 android:backgroundTint="#00155B7C"
@@ -334,7 +362,7 @@
             </ImageView>
 
             <Button
-                android:id="@+id/Plusbtn_onAddMentorPage"
+                android:id="@+id/Plusbtn_onChatsPage"
                 android:layout_height="60dp"
                 android:layout_width="70dp"
                 android:backgroundTint="#00155B7C"
@@ -374,7 +402,7 @@
 
 
             <Button
-                android:id="@+id/Chatbtn_onAddMentorPage_bottomNav"
+                android:id="@+id/Chatbtn_onChatsPage_bottomNav"
                 android:layout_height="60dp"
                 android:layout_width="70dp"
                 android:backgroundTint="#00155B7C"
@@ -404,7 +432,7 @@
             </TextView>
 
             <Button
-                android:id="@+id/Profilebtn_onAddMentorPage_bottomNav"
+                android:id="@+id/Profilebtn_onChatsPage_bottomNav"
                 android:layout_width="70dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="-55dp"
