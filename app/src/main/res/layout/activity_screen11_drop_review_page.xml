@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screen11_DropReviewPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="20"
+        android:background="@color/backGround_home">
+
+        <!--Start of Mentors intro portion,upper portion of page 10, mentor's info-->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/mentorpage_rectangle"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/homePageTextColor1"
+                    android:src="@drawable/ic_back"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="35dp">
+                </ImageView>
+
+                <Button
+                    android:id="@+id/Backbtn_onDropReviewPage"
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:backgroundTint="#00CBE3F3"
+                    android:layout_marginTop="-40dp"
+                    android:layout_marginStart="20dp">
+                </Button>
+
+            </LinearLayout>
+            <!--Simple partitioning between layers-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hi, I'm"
+                    android:textColor="@color/white"
+                    android:textSize="35sp"
+                    android:layout_marginStart="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium">
+                </TextView>
+
+                <TextView
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:text="John Cooper"
+                    android:textColor="@color/white"
+                    android:textSize="35sp"
+                    android:layout_marginStart="-130dp"
+                    android:layout_marginTop="60dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium">
+                </TextView>
+
+                <ImageView
+                    android:layout_height="120dp"
+                    android:layout_width="120dp"
+                    android:src="@drawable/headshot_mentor"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_height="1.4dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/searchpage_searchbar"
+                    android:layout_marginStart="-10dp"
+                    android:layout_marginEnd="-10dp"
+                    android:backgroundTint="@color/white"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:text="Drop me a review"
+                    android:textSize="27dp"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <ImageView
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:src="@drawable/ic_smiley_face"
+                    android:layout_marginStart="230dp"
+                    android:layout_marginTop="-30dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_height="150dp"
+                android:layout_width="330dp"
+                android:background="@drawable/ratepage_rectangle_withborder"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"/>
+
+            <EditText
+                android:id="@+id/feedback_text"
+                android:layout_height="wrap_content"
+                android:layout_width="310dp"
+                android:backgroundTint="@color/black"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="-140dp"
+                android:textSize="15dp"
+                android:textColor="@color/inputFieldColor"
+                android:hint="Type Your Experience..."/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="120dp">
+
+                <ImageView
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:background="@drawable/ic_ratestar"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="10dp"/>
+                <ImageView
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:background="@drawable/ic_ratestar"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"/>
+                <ImageView
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:background="@drawable/ic_ratestar"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"/>
+                <ImageView
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:background="@drawable/ic_ratestar"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"/>
+                <ImageView
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:background="@drawable/ic_ratestar"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submitFeedbackBtn_onDropReviewPage"
+            android:layout_height="60dp"
+            android:layout_width="350dp"
+            android:text="Submit Feedback"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:backgroundTint="@color/searchPageTextColor" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

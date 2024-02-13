@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".Screen12_AddNewMentor"
     android:background="@color/backGround_home">
 
     <ImageView
@@ -39,7 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:textAlignment="center"
-            android:layout_weight="9"
+            android:layout_weight="8"
             android:orientation="vertical">
 
             <!--    Make BackButton here-->
@@ -53,7 +52,7 @@
             </ImageView>
 
             <Button
-                android:id="@+id/Backbtn_onSearchingPage"
+                android:id="@+id/Backbtn_onAddNewMentorPage"
                 android:layout_height="40dp"
                 android:layout_width="40dp"
                 android:backgroundTint="#00CBE3F3"
@@ -65,174 +64,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
-                android:text="Let's Find..."
+                android:text="Add new mentor"
                 android:textColor="@color/searchPageTextColor"
                 android:textSize="30sp"
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="30dp"
                 android:textStyle="bold"/>
 
-            <ImageView
-                android:layout_height="30dp"
-                android:layout_width="300dp"
-                android:src="@drawable/searchpage_searchbar"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="30dp">
-            </ImageView>
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/search_icon_colored"
-                android:layout_marginStart="55dp"
-                android:layout_marginTop="-25dp">
-            </ImageView>
-
-            <Button
-                android:id="@+id/searchBtn_onSearchBar_searchPage"
-                android:layout_height="35dp"
-                android:layout_width="35dp"
-                android:backgroundTint="#00155B7C"
-                android:layout_marginStart="46dp"
-                android:layout_marginTop="-27dp"/>
-
-            <EditText
-                android:layout_width="250dp"
-                android:layout_height="27dp"
-                android:layout_marginTop="-32dp"
-                android:layout_marginStart="90dp"
-                android:textSize="25dp"
-                android:textColor="@color/black"
-                android:backgroundTint="@color/white">
-            </EditText>
-        </LinearLayout>
-
-        <!--Screen 8, Search Screen, List of recent searches-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:textAlignment="center"
-            android:layout_weight="7"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="Recent Searches"
-                    android:textColor="@color/searchPageTextColor"
-                    android:layout_marginStart="20dp"
-                    android:textStyle="bold">
-                </TextView>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="Mentor 1"
-                    android:textColor="@color/black"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:textStyle="bold">
-                </TextView>
-
-                <ImageView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:src="@drawable/ic_cross"
-                    android:rotation="45"
-                    android:layout_marginStart="250dp"
-                    android:layout_marginTop="20dp"/>
-
-                <ImageView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:src="@drawable/ic_cross"
-                    android:rotation="135"
-                    android:layout_marginStart="-25dp"
-                    android:layout_marginTop="20dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="Mentor 2"
-                    android:textColor="@color/black"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:textStyle="bold">
-                </TextView>
-
-                <ImageView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:src="@drawable/ic_cross"
-                    android:rotation="45"
-                    android:layout_marginStart="250dp"
-                    android:layout_marginTop="20dp"/>
-
-                <ImageView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:src="@drawable/ic_cross"
-                    android:rotation="135"
-                    android:layout_marginStart="-25dp"
-                    android:layout_marginTop="20dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="Mentor 3"
-                    android:textColor="@color/black"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:textStyle="bold">
-                </TextView>
-
-                <ImageView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:src="@drawable/ic_cross"
-                    android:rotation="45"
-                    android:layout_marginStart="250dp"
-                    android:layout_marginTop="20dp"/>
-
-                <ImageView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:src="@drawable/ic_cross"
-                    android:rotation="135"
-                    android:layout_marginStart="-25dp"
-                    android:layout_marginTop="20dp"/>
-
-            </LinearLayout>
+                android:fontFamily="sans-serif"
+                android:text="Help us expand!"
+                android:textColor="@color/searchPageTextColor"
+                android:textSize="17sp"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="130dp"/>
 
         </LinearLayout>
 
@@ -242,51 +89,63 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:textAlignment="center"
-            android:layout_weight="11.5"
+            android:layout_weight="19.5"
             android:orientation="vertical"
             android:backgroundTint="@color/browseCategoriesColor">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
-                android:text="Browse Categories"
-                android:textColor="@color/searchPageTextColor"
-                android:textSize="25sp"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="20dp"
-                android:textStyle="bold"/>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:orientation="horizontal">
 
+                <!--    Upload Video Button-->
+
                 <ImageView
-                    android:layout_height="60dp"
-                    android:layout_width="60dp"
-                    android:src="@drawable/ent"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="10dp"/>
+                    android:layout_height="80dp"
+                    android:layout_width="120dp"
+                    android:src="@drawable/dashedborder_rectangle"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="60dp"/>
 
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="Entrepreneurship"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:textSize="18dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginStart="15dp"/>
+                    android:text="Upload Video"
+                    android:textColor="@color/searchPageTextColor"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginStart="-100dp"/>
 
                 <ImageView
-                    android:layout_height="30dp"
-                    android:layout_width="30dp"
-                    android:src="@drawable/ic_back"
-                    android:rotation="135"
-                    android:layout_marginStart="100dp"
-                    android:layout_marginTop="25dp"/>
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@drawable/ic_video_colored"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="-60dp"/>
+
+                <!--    Upload Image Button-->
+
+                <ImageView
+                    android:layout_height="80dp"
+                    android:layout_width="120dp"
+                    android:src="@drawable/dashedborder_rectangle"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="60dp"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Upload Photo"
+                    android:textColor="@color/searchPageTextColor"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginStart="-100dp"/>
+
+                <ImageView
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@drawable/ic_camera_colored"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="-65dp"/>
 
             </LinearLayout>
 
@@ -294,65 +153,91 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_height="60dp"
-                    android:layout_width="60dp"
-                    android:src="@drawable/pg"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="10dp"/>
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="Personal Growth"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:text="Name"
+                    android:textColor="@color/white"
                     android:textSize="18dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginStart="15dp"/>
-
-                <ImageView
-                    android:layout_height="30dp"
-                    android:layout_width="30dp"
-                    android:src="@drawable/ic_back"
-                    android:rotation="135"
-                    android:layout_marginStart="100dp"
-                    android:layout_marginTop="25dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_height="60dp"
-                    android:layout_width="60dp"
-                    android:src="@drawable/ed"
                     android:layout_marginTop="10dp"
-                    android:layout_marginStart="10dp"/>
+                    android:layout_marginStart="20dp"/>
+                <ImageView
+                    android:layout_height="35dp"
+                    android:layout_width="340dp"
+                    android:src="@drawable/ratepage_rectangle_withborder"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"/>
+                <EditText
+                    android:layout_width="320dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="-36dp"
+                    android:hint="Enter Name"
+                    android:textSize="15dp"
+                    android:textColor="@color/inputFieldColor"/>
 
                 <TextView
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="Education"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:text="Description"
+                    android:textColor="@color/white"
                     android:textSize="18dp"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginStart="15dp"/>
-
+                    android:layout_marginStart="20dp"/>
                 <ImageView
-                    android:layout_height="30dp"
-                    android:layout_width="30dp"
-                    android:src="@drawable/ic_back"
-                    android:rotation="135"
-                    android:layout_marginStart="150dp"
-                    android:layout_marginTop="20dp"/>
+                    android:layout_height="35dp"
+                    android:layout_width="340dp"
+                    android:src="@drawable/ratepage_rectangle_withborder"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"/>
+                <EditText
+                    android:layout_width="320dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="-36dp"
+                    android:hint="Enter Description"
+                    android:textSize="15dp"
+                    android:textColor="@color/inputFieldColor"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Status"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:layout_marginStart="20dp"/>
+                <ImageView
+                    android:layout_height="35dp"
+                    android:layout_width="340dp"
+                    android:src="@drawable/ratepage_rectangle_withborder"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"/>
+                <EditText
+                    android:layout_width="320dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="-36dp"
+                    android:hint="Available"
+                    android:textSize="15dp"
+                    android:textColor="@color/inputFieldColor"/>
+
+                <Button
+                    android:id="@+id/uploadMentorBtn_onAddNewMentorPage"
+                    android:layout_height="60dp"
+                    android:layout_width="350dp"
+                    android:text="Upload"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="80dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium"
+                    android:backgroundTint="@color/searchPageTextColor"/>
 
             </LinearLayout>
 
@@ -449,7 +334,7 @@
             </ImageView>
 
             <Button
-                android:id="@+id/Plusbtn_onSearchPage_bottomNav"
+                android:id="@+id/Plusbtn_onSearchPage"
                 android:layout_height="60dp"
                 android:layout_width="70dp"
                 android:backgroundTint="#00155B7C"

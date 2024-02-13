@@ -72,7 +72,7 @@
                 </ImageView>
 
                 <Button
-                    android:id="@+id/notificationbtn_onHomePage"
+                    android:id="@+id/notificationBtn_onHomePage"
                     android:layout_height="30dp"
                     android:layout_width="30dp"
                     android:backgroundTint="#00CBE3F3"
@@ -431,7 +431,7 @@
             </TextView>
 
             <Button
-                android:id="@+id/Homebtn_onHomePage"
+                android:id="@+id/Homebtn_onHomePage_BottomNav"
                 android:layout_height="60dp"
                 android:layout_width="70dp"
                 android:backgroundTint="#00155B7C"
@@ -460,14 +460,14 @@
             </TextView>
 
             <Button
-                android:id="@+id/Searchbtn_onHomePage"
+                android:id="@+id/Searchbtn_onHomePage_BottomNav"
                 android:layout_height="60dp"
                 android:layout_width="70dp"
                 android:backgroundTint="#00155B7C"
                 android:layout_marginStart="-57dp">
             </Button>
 
-<!--   Plus button on bottom nav-->
+            <!--   Plus button on bottom nav-->
 
             <ImageView
                 android:layout_height="60dp"
@@ -489,22 +489,31 @@
             </ImageView>
 
             <Button
-            android:id="@+id/Plusbtn_onHomePage"
-            android:layout_height="60dp"
-            android:layout_width="70dp"
-            android:backgroundTint="#00155B7C"
-            android:layout_marginStart="-63dp">
-            </Button>>
+                android:id="@+id/Plusbtn_onHomePage_bottomNav"
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:backgroundTint="#00155B7C"
+                android:layout_marginStart="-63dp">
+            </Button>
+
+            <ImageView
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                android:src="@drawable/ic_plus_sign"
+                android:background="@drawable/rectangle"
+                android:backgroundTint="#00C1DFF3"
+                android:layout_marginStart="-63dp"
+                android:layout_marginTop="5dp">
+            </ImageView>
 
             <!-- For Chat Button -->
-
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/ic_chat"
                 android:backgroundTint="@color/white"
-                android:layout_marginStart="25dp"/>
+                android:layout_marginStart="35dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -514,17 +523,17 @@
                 android:textColor="@color/white"
                 android:textSize="16dp"
                 android:text="Chats"
-                android:layout_marginStart="-40dp"
+                android:layout_marginStart="-30dp"
                 android:layout_marginTop="20dp">
             </TextView>
 
 
             <Button
-                android:id="@+id/Chatbtn_onHomePage"
+                android:id="@+id/Chatbtn_onHomePage_bottomNav"
                 android:layout_height="60dp"
                 android:layout_width="70dp"
                 android:backgroundTint="#00155B7C"
-                android:layout_marginStart="-49dp">
+                android:layout_marginStart="-45dp">
             </Button>
 
             <!-- For Profile Button -->
@@ -535,7 +544,7 @@
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/ic_profile"
                 android:backgroundTint="@color/white"
-                android:layout_marginStart="25dp"/>
+                android:layout_marginStart="10dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -550,7 +559,7 @@
             </TextView>
 
             <Button
-                android:id="@+id/Profilebtn_onHomePage"
+                android:id="@+id/Profilebtn_onSearchPage_bottomNav"
                 android:layout_width="70dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="-55dp"

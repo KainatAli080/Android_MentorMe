@@ -21,8 +21,10 @@ class Screen7_Homepage : AppCompatActivity() {
         val name = intent.getStringExtra(Screen2_Login.PASS_NAME)
         displayName.text = name.toString()
 
+        //Already on homePage so no home Button functionality
+
         // Redirecting to Search Page for searching
-        val redirectToSearching = findViewById<Button>(R.id.Searchbtn_onHomePage)
+        val redirectToSearching = findViewById<Button>(R.id.Searchbtn_onHomePage_BottomNav)
         redirectToSearching.setOnClickListener{
             startActivity(Intent(this, Screen8_Searching::class.java));
             finish()

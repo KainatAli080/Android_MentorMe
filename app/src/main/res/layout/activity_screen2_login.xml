@@ -78,12 +78,11 @@
         <!--    Start of Login portion of Screen 2-->
         <LinearLayout
             android:background="@drawable/login_rounded"
-            android:backgroundTint="#89CBF6"
+            android:backgroundTint="@color/browseCategoriesColor"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:textAlignment="center"
-            android:layout_weight="10"
-            android:orientation="horizontal">
+            android:layout_weight="11"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_height="wrap_content"
@@ -92,66 +91,92 @@
                 android:textColor="@color/white"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
-                android:textSize="35dp"
+                android:textSize="35sp"
                 android:textStyle="bold"
                 android:fontFamily="sans-serif-light">
 
             </TextView>
 
-            <TextView
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="Email"
-                android:textColor="@color/white"
-                android:layout_marginLeft="-85dp"
-                android:layout_marginTop="70dp"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:fontFamily="sans-serif-light">
-            </TextView>
+                android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/Email_Input"
-                android:background="@drawable/loginpage_inputfield"
-                android:backgroundTint="@color/white"
-                android:layout_width="340dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="110dp"
-                android:layout_marginLeft="-50dp"
-                android:textColor="@color/black"
-                android:textSize="28dp"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Email"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-light">
+                </TextView>
 
-            <TextView
+                <EditText
+                    android:id="@+id/Email_Input_onLoginPage"
+                    android:background="@drawable/loginpage_inputfield"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="340dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="25dp"
+                    android:textColor="@color/black"
+                    android:textSize="28dp"
+                    android:hint="a@gmail.com"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="Password"
-                android:textColor="@color/white"
-                android:layout_marginLeft="-340dp"
-                android:layout_marginTop="150dp"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:fontFamily="sans-serif-light">
-            </TextView>
+                android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/Password_Input"
-                android:background="@drawable/loginpage_inputfield"
-                android:backgroundTint="@color/white"
-                android:layout_width="340dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="190dp"
-                android:layout_marginLeft="-90dp"
-                android:textColor="@color/black"
-                android:textSize="28dp"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Password"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-light">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/password_input_onLoginPage"
+                    android:background="@drawable/loginpage_inputfield"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="340dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="25dp"
+                    android:textColor="@color/black"
+                    android:textSize="28dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/forgotPassword_btnOnLoginPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginTop="2dp"
+                    android:backgroundTint="@color/browseCategoriesColor"
+                    android:text="Forgot Your Password?"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
         </LinearLayout>
 
         <!--    Start of Login button of Screen 2 (for buttons)-->
         <LinearLayout
-            android:background="#89CBF6"
+            android:background="@color/browseCategoriesColor"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:textAlignment="center"
-            android:layout_weight="7"
+            android:layout_weight="6"
             android:orientation="horizontal">
 
             <Button
@@ -162,24 +187,14 @@
                 android:layout_marginLeft="120dp"
                 android:layout_marginTop="45dp"
                 android:text="Login"
-                android:textColor="#89CBF6"
-                android:textSize="20dp" />
-
-            <Button
-                android:id="@+id/forgotPassword_btnOnLoginPage"
-                android:layout_width="200dp"
-                android:layout_height="40dp"
-                android:layout_marginBottom="50dp"
-                android:layout_marginTop="-12dp"
-                android:layout_marginLeft="-175dp"
-                android:backgroundTint="#89CBF6"
-                android:text="Forgot Your Password?"
-                android:textColor="@color/white"/>
+                android:textColor="@color/browseCategoriesColor"
+                android:textSize="20sp" />
         </LinearLayout>
 
         <!--    Start of Sign up button of Screen 2 (for buttons)-->
+        <!--    old color:  #89CBF6  -->
         <LinearLayout
-            android:background="#89CBF6"
+            android:background="@color/browseCategoriesColor"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:textAlignment="center"
@@ -197,11 +212,11 @@
             </TextView>
 
             <Button
-                android:id="@+id/SignUp_btn"
+                android:id="@+id/SignUpInstead_btn"
                 android:layout_width="103dp"
                 android:layout_height="40dp"
                 android:layout_marginBottom="20dp"
-                android:backgroundTint="#89CBF6"
+                android:backgroundTint="@color/browseCategoriesColor"
                 android:textColor="#137D9A"
                 android:textStyle="italic"
                 android:textSize="16dp"

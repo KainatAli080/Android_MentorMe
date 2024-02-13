@@ -16,11 +16,11 @@ class Screen2_Login : AppCompatActivity() {
         setContentView(R.layout.activity_screen2_login)
 
         // To underline text
-        val signup = findViewById<Button>(R.id.SignUp_btn)
+        val signup = findViewById<Button>(R.id.SignUpInstead_btn)
         signup.paintFlags = signup.paintFlags or Paint.UNDERLINE_TEXT_FLAG
 
         //To call new screen : To redirect to Sign Up Page
-        var ToSignUpPage_btn = findViewById<Button>(R.id.SignUp_btn)
+        var ToSignUpPage_btn = findViewById<Button>(R.id.SignUpInstead_btn)
         ToSignUpPage_btn.setOnClickListener{
             startActivity(Intent(this, Screen3_SignUp::class.java));
             finish()
@@ -33,9 +33,9 @@ class Screen2_Login : AppCompatActivity() {
             finish()
         }
 
-        //To call new screen : To redirect to Home Page
+        //To call new screen : To redirect to Home Page, login done
         val email = findViewById<EditText>(R.id.Email_Input)
-        var loginSuccessful = findViewById<Button>(R.id.loginBtn_toHomePage)
+        val loginSuccessful = findViewById<Button>(R.id.loginBtn_toHomePage)
         loginSuccessful.setOnClickListener{
             val name = email.text.toString()
             val intent = Intent(this, Screen7_Homepage::class.java)

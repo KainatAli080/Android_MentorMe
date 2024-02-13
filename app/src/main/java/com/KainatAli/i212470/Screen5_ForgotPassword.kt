@@ -13,9 +13,14 @@ class Screen5_ForgotPassword : AppCompatActivity() {
 
         val redirectToLogin = findViewById<Button>(R.id.redirectToLoginPage_fromForgotPassword_btn)
         redirectToLogin.paintFlags = redirectToLogin.paintFlags or Paint.UNDERLINE_TEXT_FLAG
-
         redirectToLogin.setOnClickListener{
             startActivity(Intent(this, Screen2_Login::class.java));
+            finish()
+        }
+
+        val redirectToResetPassword = findViewById<Button>(R.id.verify_btn_verifyPage)
+        redirectToResetPassword.setOnClickListener{
+            startActivity(Intent(this, Screen6_resetPassword::class.java));
             finish()
         }
     }

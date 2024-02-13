@@ -17,11 +17,11 @@ class Screen3_SignUp : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_screen3_sign_up)
 
-        val loginPage = findViewById<Button>(R.id.loginPage_btn)
+        val loginPage = findViewById<Button>(R.id.loginPageBtn_onSignUpPage)
         loginPage.paintFlags = loginPage.paintFlags or Paint.UNDERLINE_TEXT_FLAG
 
         // to shift back to login page if account already exists
-        var ToLoginPage_btn = findViewById<Button>(R.id.loginPage_btn)
+        var ToLoginPage_btn = findViewById<Button>(R.id.loginPageBtn_onSignUpPage)
         ToLoginPage_btn.setOnClickListener{
             startActivity(Intent(this, Screen2_Login::class.java));
             finish()

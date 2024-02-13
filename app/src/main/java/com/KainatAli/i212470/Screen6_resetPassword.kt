@@ -13,8 +13,13 @@ class Screen6_resetPassword : AppCompatActivity() {
 
         val redirectToLoginPage = findViewById<Button>(R.id.redirectToLoginPage_btnOnResetPasswordScreen)
         redirectToLoginPage.paintFlags = redirectToLoginPage.paintFlags or Paint.UNDERLINE_TEXT_FLAG
-
         redirectToLoginPage.setOnClickListener{
+            startActivity(Intent(this, Screen2_Login::class.java));
+            finish()
+        }
+
+        val doneResetting = findViewById<Button>(R.id.resetBtn_redirectToLoginPage)
+        doneResetting.setOnClickListener{
             startActivity(Intent(this, Screen2_Login::class.java));
             finish()
         }
