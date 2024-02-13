@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/backGround_home">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginEnd="316dp"
+        android:background="@drawable/circle_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle_1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="-80dp"
+        android:layout_marginEnd="254dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle_1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="20">
+
+        <!--Top of Screen 7, name display-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textAlignment="center"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+
+<!--    Make BackButton here-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:orientation="vertical">
+
+                <!--        Notification Button-->
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/homePageTextColor1"
+                    android:src="@drawable/ic_back"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="35dp">
+                </ImageView>
+
+                <Button
+                    android:id="@+id/Backbtn_onSearchingPage"
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:backgroundTint="#00CBE3F3"
+                    android:layout_marginTop="-40dp"
+                    android:layout_marginStart="20dp">
+                </Button>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Let's Find..."
+                    android:textColor="@color/searchPageTextColor"
+                    android:textSize="30sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="30dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--    Start of list of types of mentors portion of Screen 2-->
+        <LinearLayout
+            android:background="@drawable/login_rounded"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textAlignment="center"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="30dp"
+                android:layout_width="35dp"
+                android:text="All"
+                android:textSize="16sp"
+                android:background="@drawable/verify_btn"
+                android:backgroundTint="#157177"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center">
+            </TextView>
+
+            <TextView
+                android:layout_height="30dp"
+                android:layout_width="100dp"
+                android:text="Education"
+                android:textSize="16sp"
+                android:background="@drawable/rectangle"
+                android:textColor="#157177"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center">
+            </TextView>
+
+            <TextView
+                android:layout_height="30dp"
+                android:layout_width="160dp"
+                android:text="Entrepreneurship"
+                android:textSize="16sp"
+                android:background="@drawable/rectangle"
+                android:textColor="#157177"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center">
+            </TextView>
+
+            <TextView
+                android:layout_height="30dp"
+                android:layout_width="150dp"
+                android:text="Personal Growth"
+                android:textSize="16sp"
+                android:background="@drawable/rectangle"
+                android:textColor="#157177"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center">
+            </TextView>
+
+        </LinearLayout>
+
+        <!--    Start of Bottom Navigation    -->
+        <LinearLayout
+            android:background="#155B7C"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textAlignment="center"
+            android:layout_weight="2.5"
+            android:orientation="horizontal">
+
+            <!--For home button on botton navigation-->
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ic_home"
+                android:backgroundTint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:textStyle="bold"
+
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:text="Home"
+                android:layout_marginStart="-40dp"
+                android:layout_marginTop="20dp">
+            </TextView>
+
+            <Button
+                android:id="@+id/Homebtn_onHomePage"
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:backgroundTint="#00155B7C"
+                android:layout_marginStart="-52dp">
+            </Button>
+
+            <!-- For Search Button -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/ic_search"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:text="Search"
+                android:layout_marginStart="-40dp"
+                android:layout_marginTop="20dp">
+            </TextView>
+
+            <Button
+                android:id="@+id/Searchbtn_onHomePage"
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:backgroundTint="#00155B7C"
+                android:layout_marginStart="-57dp">
+            </Button>
+
+            <!--   Plus button on bottom nav-->
+
+            <ImageView
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:src="@drawable/ic_plus_circle"
+                android:background="@drawable/rectangle"
+                android:backgroundTint="#00C1DFF3"
+                android:rotation="90"
+                android:layout_marginStart="10dp">
+            </ImageView>
+
+            <ImageView
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:src="@drawable/ic_plus_circle"
+                android:background="@drawable/rectangle"
+                android:backgroundTint="#00C1DFF3"
+                android:layout_marginStart="-60dp">
+            </ImageView>
+
+            <Button
+                android:id="@+id/Plusbtn_onHomePage"
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:backgroundTint="#00155B7C"
+                android:layout_marginStart="-63dp">
+            </Button>>
+
+            <!-- For Chat Button -->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/ic_chat"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:text="Chats"
+                android:layout_marginStart="-40dp"
+                android:layout_marginTop="20dp">
+            </TextView>
+
+
+            <Button
+                android:id="@+id/Chatbtn_onHomePage"
+                android:layout_height="60dp"
+                android:layout_width="70dp"
+                android:backgroundTint="#00155B7C"
+                android:layout_marginStart="-49dp">
+            </Button>
+
+            <!-- For Profile Button -->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/ic_profile"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:text="Profile"
+                android:layout_marginStart="-40dp"
+                android:layout_marginTop="20dp">
+            </TextView>
+
+            <Button
+                android:id="@+id/Profilebtn_onHomePage"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="-55dp"
+                android:backgroundTint="#00155B7C">
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

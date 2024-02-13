@@ -3,4 +3,12 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="backGround_home">#CBE3F3</color>
+    <color name="homePageTextColor1">#157177</color>
+    <color name="searchPageTextColor">#176071</color>
+    <color name="browseCategoriesColor">#84D7EA</color>
+    <color name="mentorPageButtonColor">#FFC907</color>
+    <color name="inputFieldColor">#615E5E</color>
+    <color name="cameraBackgroundColor">#838080</color>
+    <color name="bookSessionBlockColor">#B6E0FB</color>
+    <color name="bottomNavColor">#0B6E85</color>
 </resources>

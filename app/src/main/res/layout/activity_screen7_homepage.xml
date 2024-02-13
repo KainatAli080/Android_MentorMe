@@ -60,6 +60,26 @@
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="50dp"/>
 
+        <!--        Notification Button-->
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/circle_1"
+                    android:backgroundTint="@color/homePageTextColor1"
+                    android:src="@drawable/ic_notification"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginTop="55dp">
+                </ImageView>
+
+                <Button
+                    android:id="@+id/notificationbtn_onHomePage"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:backgroundTint="#00CBE3F3"
+                    android:layout_marginTop="47dp"
+                    android:layout_marginStart="-25dp">
+                </Button>
+
                 <TextView
                     android:id="@+id/displayName"
                     android:layout_width="wrap_content"
@@ -68,7 +88,8 @@
                     android:textColor="#157177"
                     android:textSize="27sp"
                     android:textStyle="bold"
-                    android:layout_marginTop="50dp">
+                    android:layout_marginTop="50dp"
+                    android:layout_marginStart="-240dp">
                 </TextView>
 
             </LinearLayout>
@@ -512,7 +533,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
-                android:background="@drawable/ic_person"
+                android:background="@drawable/ic_profile"
                 android:backgroundTint="@color/white"
                 android:layout_marginStart="25dp"/>
 
