@@ -17,12 +17,19 @@ class Screen15_JohnCooperChat : AppCompatActivity() {
             finish()
         }
 
-
-
-
         //2. callBtn_onJohnCoopersChat
-        //3. videoCallBtn_onJohnCoopersChat
+        val startVoiceCall = findViewById<Button>(R.id.callBtn_onJohnCoopersChat)
+        startVoiceCall.setOnClickListener{
+            startActivity(Intent(this, Screen20_VoiceCall::class.java));
+            finish()
+        }
 
+        //3. videoCallBtn_onJohnCoopersChat
+        val startVideoCall = findViewById<Button>(R.id.videoCallBtn_onJohnCoopersChat)
+        startVideoCall.setOnClickListener{
+            startActivity(Intent(this, Screen19_VideoCall::class.java));
+            finish()
+        }
 
         //4. Homebtn_onJohnsChat_BottomNav
         val goToHomePage = findViewById<Button>(R.id.Homebtn_onJohnsChat_BottomNav)
