@@ -18,9 +18,23 @@ class Screen13_BookSession : AppCompatActivity() {
         }
 
         //2. openChat_JohnCoopers
+        val jonC = findViewById<Button>(R.id.openChat_JohnCoopers)
+        jonC.setOnClickListener{
+            startActivity(Intent(this, Screen15_JohnCooperChat::class.java));
+            finish()
+        }
         //3. openVoiceCall_JohnCoopers
+        val jonV = findViewById<Button>(R.id.openVoiceCall_JohnCoopers)
+        jonV.setOnClickListener{
+            startActivity(Intent(this, Screen20_VoiceCall::class.java));
+            finish()
+        }
         //4. openVideoCall_JohnCoopers
-
+        val jonVC = findViewById<Button>(R.id.openVideoCall_JohnCoopers)
+        jonVC.setOnClickListener{
+            startActivity(Intent(this, Screen19_VideoCall::class.java));
+            finish()
+        }
 
         //5. Backbtn_onBookSessionPage (send back to mentor info page)
         val toMentorInfoPage = findViewById<Button>(R.id.Backbtn_onBookSessionPage)

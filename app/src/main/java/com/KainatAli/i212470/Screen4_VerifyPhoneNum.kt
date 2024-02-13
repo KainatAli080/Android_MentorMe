@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.TextView
 import com.google.android.material.button.MaterialButton
 import android.util.Log
+import android.widget.Button
 
 class Screen4_VerifyPhoneNum : AppCompatActivity() {
 
@@ -23,6 +24,13 @@ class Screen4_VerifyPhoneNum : AppCompatActivity() {
         val back_btn = findViewById<MaterialButton>(R.id.back_btn_toSignUp)
         back_btn.setOnClickListener{
             startActivity(Intent(this, Screen3_SignUp::class.java));
+            finish()
+        }
+
+        //verify_btn_verifyPage
+        val verifyDone = findViewById<Button>(R.id.verify_btn_verifyPage)
+        verifyDone.setOnClickListener{
+            startActivity(Intent(this, Screen2_Login::class.java));
             finish()
         }
     }

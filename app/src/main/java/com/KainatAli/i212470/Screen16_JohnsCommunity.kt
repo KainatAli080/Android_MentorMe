@@ -56,9 +56,11 @@ class Screen16_JohnsCommunity : AppCompatActivity() {
             startActivity(Intent(this, Screen14_ChatsPage::class.java));
             finish()
         }
-
-
-
         //8. Profilebtn_onJohnsCommunity_bottomNav
+        val profilO = findViewById<Button>(R.id.Profilebtn_onJohnsCommunity_bottomNav)
+        profilO.setOnClickListener{
+            startActivity(Intent(this, Screen12_AddNewMentor::class.java));
+            finish()
+        }
     }
 }

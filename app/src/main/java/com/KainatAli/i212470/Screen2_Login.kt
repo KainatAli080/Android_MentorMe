@@ -34,7 +34,7 @@ class Screen2_Login : AppCompatActivity() {
         }
 
         //To call new screen : To redirect to Home Page, login done
-        val email = findViewById<EditText>(R.id.Email_Input)
+        val email = findViewById<EditText>(R.id.Email_Input_onLoginPage)
         val loginSuccessful = findViewById<Button>(R.id.loginBtn_toHomePage)
         loginSuccessful.setOnClickListener{
             val name = email.text.toString()

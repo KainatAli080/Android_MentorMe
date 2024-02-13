@@ -39,6 +39,17 @@ class Screen12_AddNewMentor : AppCompatActivity() {
         }
 
         //5. Chatbtn_onAddMentorPage_bottomNav
+        val c = findViewById<Button>(R.id.Chatbtn_onAddMentorPage_bottomNav)
+        c.setOnClickListener{
+            startActivity(Intent(this, Screen14_ChatsPage::class.java));
+            finish()
+        }
+
         //6. Profilebtn_onAddMentorPage_bottomNav
+        val pr = findViewById<Button>(R.id.Profilebtn_onAddMentorPage_bottomNav)
+        pr.setOnClickListener{
+            startActivity(Intent(this, Screen21_Profile::class.java));
+            finish()
+        }
     }
 }

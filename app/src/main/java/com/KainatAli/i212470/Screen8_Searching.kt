@@ -10,12 +10,6 @@ class Screen8_Searching : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_screen8_searching)
 
-        // Buttons to implement:
-        // 1. searchBtn_onSearchBar_searchPage
-        // 3. Profilebtn_onSearchPage_bottomNav
-        // 4. Chatbtn_onSearchPage_bottomNav
-        // 5. Plusbtn_onSearchPage_bottomNav
-
         // Redirecting to Home Page for back button
         val goBackToHome = findViewById<Button>(R.id.Backbtn_onSearchingPage)
         goBackToHome.setOnClickListener{
@@ -32,32 +26,33 @@ class Screen8_Searching : AppCompatActivity() {
             finish()
         }
 
+
         // Redirecting to Chat Page
-//        val redirectToChatPage = findViewById<Button>(R.id.Chatbtn_onHomePage)
-//        redirectToChatPage.setOnClickListener{
-//            startActivity(Intent(this, Screen8_Searching::class.java));
-//            finish()
-//        }
+        val ToChatPage = findViewById<Button>(R.id.Chatbtn_onSearchPage_bottomNav)
+        ToChatPage.setOnClickListener{
+            startActivity(Intent(this, Screen14_ChatsPage::class.java));
+            finish()
+        }
 
         // Redirecting to Profile Page
-//        val redirectToProfilePage = findViewById<Button>(R.id.Profilebtn_onHomePage)
-//        redirectToProfilePage.setOnClickListener{
-//            startActivity(Intent(this, Screen8_Searching::class.java));
-//            finish()
-//        }
+        val ToProfilePage = findViewById<Button>(R.id.Profilebtn_onSearchPage_bottomNav)
+        ToProfilePage.setOnClickListener{
+            startActivity(Intent(this, Screen21_Profile::class.java));
+            finish()
+        }
 
         // Redirect to Add mentor page, the plus button
-//        val redirectToAddMentor = findViewById<Button>(R.id.Plusbtn_onHomePage)
-//        redirectToAddMentor.setOnClickListener{
-//            startActivity(Intent(this, Screen8_Searching::class.java));
-//            finish()
-//        }
+        val ToAddMentor = findViewById<Button>(R.id.Plusbtn_onSearchPage_bottomNav)
+        ToAddMentor.setOnClickListener{
+            startActivity(Intent(this, Screen12_AddNewMentor::class.java));
+            finish()
+        }
 
-        // Redirecting to Notifications Page
-//        val redirectToNotifications = findViewById<Button>(R.id.notificationbtn_onHomePage)
-//        redirectToNotifications.setOnClickListener{
-//            startActivity(Intent(this, Screen8_Searching::class.java));
-//            finish()
-//        }
+        // Redirecting to SearchResults Page
+        val searchResults = findViewById<Button>(R.id.searchBtn_onSearchBar_searchPage)
+        searchResults.setOnClickListener{
+            startActivity(Intent(this, Screen9_SearchResultsPage::class.java));
+            finish()
+        }
     }
 }

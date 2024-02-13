@@ -21,7 +21,7 @@ class Screen3_SignUp : AppCompatActivity() {
         loginPage.paintFlags = loginPage.paintFlags or Paint.UNDERLINE_TEXT_FLAG
 
         // to shift back to login page if account already exists
-        var ToLoginPage_btn = findViewById<Button>(R.id.loginPageBtn_onSignUpPage)
+        val ToLoginPage_btn = findViewById<Button>(R.id.loginPageBtn_onSignUpPage)
         ToLoginPage_btn.setOnClickListener{
             startActivity(Intent(this, Screen2_Login::class.java));
             finish()
@@ -40,7 +40,7 @@ class Screen3_SignUp : AppCompatActivity() {
         }
 
         //Upon finishing sign up, redirect to login Page
-        var LoginPage = findViewById<Button>(R.id.SignUpFinished_btn)
+        val LoginPage = findViewById<Button>(R.id.SignUpFinished_btn)
         LoginPage.setOnClickListener{
             startActivity(Intent(this, Screen2_Login::class.java));
             finish()

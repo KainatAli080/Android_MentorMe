@@ -31,10 +31,32 @@ class Screen9_SearchResultsPage : AppCompatActivity() {
             finish()
         }
 
-
         // 1. MentorInfoBtn_onSearchResultsPage (would redirect to mentor info page)
+        val mentInfo = findViewById<Button>(R.id.MentorInfoBtn_onSearchResultsPage)
+        mentInfo.setOnClickListener{
+            startActivity(Intent(this, Screen10_MentorInfoPage::class.java));
+            finish()
+        }
+
         // 5. Plusbtn_onSearchResultsPage_bottomNav
+        val new = findViewById<Button>(R.id.Plusbtn_onSearchResultsPage_bottomNav)
+        new.setOnClickListener{
+            startActivity(Intent(this, Screen12_AddNewMentor::class.java));
+            finish()
+        }
+
         // 6. Chatbtn_onSearchResultsPage_bottomNav
+        val chat = findViewById<Button>(R.id.Chatbtn_onSearchResultsPage_bottomNav)
+        chat.setOnClickListener{
+            startActivity(Intent(this, Screen14_ChatsPage::class.java));
+            finish()
+        }
+
         // 7. Profilebtn_onSearchResultsPage_bottomNav
+        val prof = findViewById<Button>(R.id.Profilebtn_onSearchResultsPage_bottomNav)
+        prof.setOnClickListener{
+            startActivity(Intent(this, Screen21_Profile::class.java));
+            finish()
+        }
     }
 }

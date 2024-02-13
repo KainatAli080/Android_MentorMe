@@ -55,10 +55,11 @@ class Screen15_JohnCooperChat : AppCompatActivity() {
             startActivity(Intent(this, Screen14_ChatsPage::class.java));
             finish()
         }
-
-
-
-
         //8. Profilebtn_onJohnsChat_bottomNav
+        val goProf = findViewById<Button>(R.id.Profilebtn_onJohnsChat_bottomNav)
+        goProf.setOnClickListener{
+            startActivity(Intent(this, Screen21_Profile::class.java));
+            finish()
+        }
     }
 }

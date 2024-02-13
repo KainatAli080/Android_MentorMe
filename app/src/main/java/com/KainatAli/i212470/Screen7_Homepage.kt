@@ -31,32 +31,32 @@ class Screen7_Homepage : AppCompatActivity() {
         }
 
         // Redirecting to Chat Page
-//        val redirectToChatPage = findViewById<Button>(R.id.Chatbtn_onHomePage)
-//        redirectToChatPage.setOnClickListener{
-//            startActivity(Intent(this, Screen8_Searching::class.java));
-//            finish()
-//        }
+        val redirectToChatPage = findViewById<Button>(R.id.Chatbtn_onHomePage_bottomNav)
+        redirectToChatPage.setOnClickListener{
+            startActivity(Intent(this, Screen14_ChatsPage::class.java));
+            finish()
+        }
 
         // Redirecting to Profile Page
-//        val redirectToProfilePage = findViewById<Button>(R.id.Profilebtn_onHomePage)
-//        redirectToProfilePage.setOnClickListener{
-//            startActivity(Intent(this, Screen8_Searching::class.java));
-//            finish()
-//        }
+        val redirectToProfilePage = findViewById<Button>(R.id.Profilebtn_onHomePage_bottomNav)
+        redirectToProfilePage.setOnClickListener{
+            startActivity(Intent(this, Screen21_Profile::class.java));
+            finish()
+        }
 
         // Redirect to Add mentor page, the plus button
-//        val redirectToAddMentor = findViewById<Button>(R.id.Plusbtn_onHomePage)
-//        redirectToAddMentor.setOnClickListener{
-//            startActivity(Intent(this, Screen8_Searching::class.java));
-//            finish()
-//        }
+        val redirectToAddMentor = findViewById<Button>(R.id.Plusbtn_onHomePage_bottomNav)
+        redirectToAddMentor.setOnClickListener{
+            startActivity(Intent(this, Screen12_AddNewMentor::class.java));
+            finish()
+        }
 
         // Redirecting to Notifications Page
-//        val redirectToNotifications = findViewById<Button>(R.id.notificationbtn_onHomePage)
-//        redirectToNotifications.setOnClickListener{
-//            startActivity(Intent(this, Screen8_Searching::class.java));
-//            finish()
-//        }
+        val redirectToNotifications = findViewById<Button>(R.id.notificationBtn_onHomePage)
+        redirectToNotifications.setOnClickListener{
+            startActivity(Intent(this, Screen24_NotificationsPage::class.java));
+            finish()
+        }
 
     }
 }

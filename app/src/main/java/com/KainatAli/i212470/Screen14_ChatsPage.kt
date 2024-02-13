@@ -18,7 +18,11 @@ class Screen14_ChatsPage : AppCompatActivity() {
         }
 
         //2. openJohnsChat_onChatsPage
-
+        val openJ = findViewById<Button>(R.id.openJohnsChat_onChatsPage)
+        openJ.setOnClickListener{
+            startActivity(Intent(this, Screen15_JohnCooperChat::class.java));
+            finish()
+        }
 
         //3. Homebtn_onChatsPage_BottomNav
         val goH = findViewById<Button>(R.id.Homebtn_onChatsPage_BottomNav)
@@ -42,5 +46,10 @@ class Screen14_ChatsPage : AppCompatActivity() {
         }
 
         //7. Profilebtn_onChatsPage_bottomNav
+        val profi = findViewById<Button>(R.id.Profilebtn_onChatsPage_bottomNav)
+        profi.setOnClickListener{
+            startActivity(Intent(this, Screen21_Profile::class.java));
+            finish()
+        }
     }
 }
