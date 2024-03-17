@@ -19,7 +19,6 @@ class Screen3_SignUp : AppCompatActivity() {
 
         val loginPage = findViewById<Button>(R.id.loginPageBtn_onSignUpPage)
         loginPage.paintFlags = loginPage.paintFlags or Paint.UNDERLINE_TEXT_FLAG
-
         // to shift back to login page if account already exists
         val ToLoginPage_btn = findViewById<Button>(R.id.loginPageBtn_onSignUpPage)
         ToLoginPage_btn.setOnClickListener{
@@ -36,13 +35,6 @@ class Screen3_SignUp : AppCompatActivity() {
             val intent = Intent(this, Screen4_VerifyPhoneNum::class.java)
             intent.putExtra("phone_number", pnum)
             startActivity(intent)
-            finish()
-        }
-
-        //Upon finishing sign up, redirect to login Page
-        val LoginPage = findViewById<Button>(R.id.SignUpFinished_btn)
-        LoginPage.setOnClickListener{
-            startActivity(Intent(this, Screen2_Login::class.java));
             finish()
         }
     }
