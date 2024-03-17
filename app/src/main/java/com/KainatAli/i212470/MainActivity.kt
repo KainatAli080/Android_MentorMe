@@ -8,6 +8,7 @@ import android.os.Handler
 class MainActivity : AppCompatActivity() {
 
     private val introPage_displayTime: Long = 5000  // 2 seconds
+    private val i: Long = 700
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
