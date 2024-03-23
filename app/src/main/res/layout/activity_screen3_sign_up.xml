@@ -305,7 +305,7 @@
                 android:layout_width="103dp"
                 android:layout_height="40dp"
                 android:layout_marginBottom="20dp"
-                android:backgroundTint="#89CBF6"
+                android:backgroundTint="@color/browseCategoriesColor"
                 android:textColor="#137D9A"
                 android:textStyle="italic"
                 android:textSize="16dp"
